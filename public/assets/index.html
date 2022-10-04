@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Find Me</title>
+
+    <script
+      type="module"
+      defer
+      src="/assets/js/controllers/MainController.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Page 1 - HomePage-->
+    <section class="homePage">
+      <header>
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="" />
+          <h2 class="gameName">ind Me</h2>
+        </div>
+
+        <div class="homePage__account login">
+          <p class="account__loginSignup">Login/SignUp</p>
+          <p class="account__logout hidden">Logout</p>
+          <br />
+          <br />
+          <p class="account__scoreBoard">View Score Board</p>
+        </div>
+      </header>
+      <div class="homePage__game">
+        <div class="homePage__game--help">
+          How To Play
+          <br />
+          <br />
+          <div class="q">?</div>
+        </div>
+        <div class="homePage__game--start">Click here To Start The Game</div>
+      </div>
+      <div class="help">
+        <div class="close">X</div>
+        <p>
+          <span style="color:red;"> Find Me</span>
+          <br />
+          STAGE 1 : 10 images will be shown, followed by a tone. The goal of the
+          game is to guess these 10 pictures and the tone at the final stage of
+          the game. But in order to go to the final stage user should pass the
+          stages coming before that. According to the scores the user gets in
+          these sub stages , user will be provided with some clues to find the
+          correct images in the final Stage.
+
+          <br />
+          <br />
+          STAGE 2 : In this stage user has to break a 4 digit code within 10
+          tries. where each digit is different. if the user fails this stage
+          he/she will lose the whole game. Red Square indicates that one of the
+          guessed digit is correct, and it is in a correct position. Grey Square
+          indicates that one of the guessed digit is correct, and it is in a
+          Wrong position. However The order of the Red and Grey squares does not
+          indicates the exact position of the guessed digit.
+
+          <br />
+          <br />
+          STAGE 3 : In this stage , user will be given 10 tones similar to the
+          tone that was played on the first stage. user has to find the correct
+          one. user will lose the whole game if user fails to guess the tone.
+        </p>
+      </div>
+    </section>
+
+    <!--  level 1 - Page 2 --->
+    <!--  level 2 - Page 3 --->
+    <!--  level3 - Page 4 -->
+    <!--  level4 - page5 -->
+    <!--  level 5 - answers -->
+    <!--  level6 - end -->
+    <!--  login / sign up -->
+    <!--  Scoreboard -->
+  </body>
+</html>

@@ -17,7 +17,7 @@ class model {
   async getImages() {
     let tempArray;
     let that = this;
-    let response = await fetch("api/v1/images", {
+    let response = await fetch("/api/v1/images", {
       method: "GET",
     });
 
@@ -65,14 +65,11 @@ class model {
     let response;
     let res;
     try {
-      const response = await fetch(
-        `http://127.0.0.1:3000/api/v1/users/signUp`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        }
-      );
+      const response = await fetch(`api/v1/users/signUp`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
       res = await response.json();
 
       if (res.status === "success") {
@@ -92,7 +89,7 @@ class model {
     const data = { email: email, password: password };
     let res;
     try {
-      const response = await fetch(`http://127.0.0.1:3000/api/v1/users/login`, {
+      const response = await fetch(`/api/v1/users/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -111,7 +108,7 @@ class model {
     let response;
     let res;
     try {
-      response = await fetch(`http://127.0.0.1:3000/api/v1/users/logout`);
+      response = await fetch(`/api/v1/users/logout`);
       res = await response.json();
       if ((res.status = "success")) location.reload(true);
     } catch (err) {
@@ -122,12 +119,9 @@ class model {
   async isLoggedIn() {
     let res;
     try {
-      const response = await fetch(
-        `http://127.0.0.1:3000/api/v1/users/isLoggedin`,
-        {
-          method: "GET",
-        }
-      );
+      const response = await fetch(`/api/v1/users/isLoggedin`, {
+        method: "GET",
+      });
       res = await response.json();
 
       if (res.status === "success") {
@@ -150,14 +144,11 @@ class model {
       };
 
       try {
-        const response = await fetch(
-          `http://127.0.0.1:3000/api/v1/users/uploadScore`,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
-          }
-        );
+        const response = await fetch(`/api/v1/users/uploadScore`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
         res = await response.json();
 
         if (res.status === "success") {
@@ -172,12 +163,9 @@ class model {
 
     //getting all Scores
     try {
-      const response = await fetch(
-        `http://127.0.0.1:3000/api/v1/users/getScores`,
-        {
-          method: "GET",
-        }
-      );
+      const response = await fetch(`/api/v1/users/getScores`, {
+        method: "GET",
+      });
 
       res = await response.json();
 

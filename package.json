@@ -1,7 +1,7 @@
 {
   "name": "04-findme-cis-game",
   "version": "1.0.0",
-  "main": "./public/assets/js/controllers/bundleMainController.js",
+  "main": "server.js",
   "targets": {
     "main": {
       "includeNodeModules": true

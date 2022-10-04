@@ -119,7 +119,7 @@ class model {
   async isLoggedIn() {
     let res;
     try {
-      const response = await fetch(`/api/v1/users/isLoggedin`, {
+      const response = await fetch(`/api/v1/users/isLogedin`, {
         method: "GET",
       });
       res = await response.json();

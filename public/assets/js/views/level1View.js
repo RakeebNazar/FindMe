@@ -22,7 +22,7 @@ export default class level1View extends view {
 
       if (clock === 2) {
         tone = new Audio(
-          `http://tones7.97tech.tk/stream/${that.#tonesArray[5]}` //http://tones7.97tech.tk/
+          `https://tones7.97tech.tk/stream/${that.#tonesArray[5]}` //http://tones7.97tech.tk/
         );
         tone.play();
       }
@@ -65,70 +65,90 @@ export default class level1View extends view {
       <div class="gallery">
         <figure class="gallery__item gallery__item--1">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[0].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[0].name
+            }"
             alt="Gallery image 1"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--2">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[1].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[1].name
+            }"
             alt="Gallery image 2"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--3">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[2].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[2].name
+            }"
             alt="Gallery image 3"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--4">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[3].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[3].name
+            }"
             alt="Gallery image 4"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--5">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[4].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[4].name
+            }"
             alt="Gallery image 5"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--6">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[5].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[5].name
+            }"
             alt="Gallery image 6"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--11">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[6].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[6].name
+            }"
             alt="Gallery image 11"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--8">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[7].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[7].name
+            }"
             alt="Gallery image 8"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--13">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[8].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[8].name
+            }"
             alt="Gallery image 13"
             class="gallery__img"
           />
         </figure>
         <figure class="gallery__item gallery__item--12">
           <img
-            src="http://127.0.0.1:3000/assets/${this.#newImageArray[9].name}"
+            src="https://findme-lk.herokuapp.com//assets/${
+              this.#newImageArray[9].name
+            }"
             alt="Gallery image 12"
             class="gallery__img"
           />

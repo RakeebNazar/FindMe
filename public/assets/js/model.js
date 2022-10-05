@@ -41,7 +41,7 @@ class model {
     let Howmany = 10;
 
     let response = await fetch(
-      `http://tones7.97tech.tk/tones/?tones = ${Howmany}`,
+      `https://tones7.97tech.tk/tones/?tones = ${Howmany}`,
       {
         method: "GET",
       }

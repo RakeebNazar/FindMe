@@ -11,6 +11,7 @@ export default class level2View extends view {
   currentInputCount = 0;
   currentInput;
   clock = 180;
+  timeClock;
 
   constructor() {
     super();
@@ -248,8 +249,9 @@ export default class level2View extends view {
         that.userAnswer = [];
 
         if (that.tries === 11) {
-          clearInterval(timeClock);
-          lost.classList.add("visibility");
+          console.log("somethings yuo");
+          clearInterval(that.timeClock);
+          document.querySelector(".lost").classList.add("visibility");
         } else {
           return;
         }
@@ -288,7 +290,7 @@ export default class level2View extends view {
     };
 
     tik();
-    const timeClock = setInterval(tik, 1000);
+    that.timeClock = setInterval(tik, 1000);
   }
 
   UniqueRandomNum(limit, howMany) {

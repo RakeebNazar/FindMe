@@ -23,7 +23,7 @@ export default class level2View extends view {
     <section class="level2">
       <header>
         <div class="logo">
-          <img src="/assets/logo.png" alt="" />
+          <img src="https://findme-lk.herokuapp.com/assets/logo.png" alt="" />
           <h2 class="gameName">ind Me</h2>
         </div>
 
@@ -227,7 +227,7 @@ export default class level2View extends view {
     let wrong = document.querySelector(".wrong");
     let that = this;
 
-    this.correctAnswer = UniqueRandomNum(9, 4); //generating a random number for the game this.UniqueRandomNum(9, 4)
+    this.correctAnswer = this.UniqueRandomNum(9, 4); //generating a random number for the game this.UniqueRandomNum(9, 4)
     console.log(this.correctAnswer);
     //allowing users to submit their answer
     right.addEventListener("click", function(event) {

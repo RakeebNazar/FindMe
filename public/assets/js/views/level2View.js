@@ -247,7 +247,7 @@ export default class level2View extends view {
         that.tries++;
         that.userAnswer = [];
 
-        console.log(tries);
+        console.log(that.tries);
       }
     });
     //allowing users to delete their answer

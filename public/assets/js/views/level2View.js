@@ -247,7 +247,12 @@ export default class level2View extends view {
         that.tries++;
         that.userAnswer = [];
 
-        console.log(that.tries);
+        if (that.tries === 11) {
+          clearInterval(timeClock);
+          lost.classList.add("visibility");
+        } else {
+          return;
+        }
       }
     });
     //allowing users to delete their answer

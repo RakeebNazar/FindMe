@@ -227,7 +227,7 @@ export default class level2View extends view {
     let wrong = document.querySelector(".wrong");
     let that = this;
 
-    this.correctAnswer = [5, 2, 3, 1]; //generating a random number for the game this.UniqueRandomNum(9, 4)
+    this.correctAnswer = UniqueRandomNum(9, 4); //generating a random number for the game this.UniqueRandomNum(9, 4)
     console.log(this.correctAnswer);
     //allowing users to submit their answer
     right.addEventListener("click", function(event) {

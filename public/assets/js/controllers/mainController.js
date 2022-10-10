@@ -24,7 +24,7 @@ class mainController {
   }
 
   async initizeHomePageController() {
-    //we cant initilize homePageController inside constructir, bcause we have to call a await method before the initialization.
+    //we cant initilize homePageController inside constructir, bcause we have to call an await method before the initialization.
     //class constructpr wont deal with await. So, here we have a initialize method for the home page class.
     await modelObj.isLoggedIn();
     this.homePageControllerCls = new homePageController(

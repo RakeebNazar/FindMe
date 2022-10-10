@@ -255,6 +255,8 @@ export default class level2View extends view {
         } else {
           return;
         }
+
+        console.log(that.timeClock);
       }
     });
     //allowing users to delete their answer

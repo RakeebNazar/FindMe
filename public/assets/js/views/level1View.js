@@ -51,7 +51,7 @@ export default class level1View extends view {
     <section class="level1">  
     <header>
       <div class="logo">
-        <img src="https://findme-lk.herokuapp.com/assets/logo.png" alt="" />
+        <img src="assets/Logo.png" alt="" />
         <h2 class="gameName">ind Me</h2>
       </div>
 

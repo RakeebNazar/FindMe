@@ -16,7 +16,7 @@ export default class level3View extends view {
     this.data = `<section class="level3">
     <header>
       <div class="logo">
-        <img src="/assets/logo.png" alt="" />
+        <img src="assets/Logo.png" alt="" />
         <h2 class="gameName">ind Me</h2>
       </div>
 

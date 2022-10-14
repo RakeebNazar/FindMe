@@ -35,8 +35,6 @@ body {
   object-fit: contain;
   height: 70px;
 }
-.logo h2 {
-}
 
 /* Page 1 */
 
@@ -1451,6 +1449,7 @@ body {
   border: 1px solid grey;
   line-height: 2;
   grid-template-rows: max-content max-content;
+  overflow-y: auto;
 }
 
 .close {
